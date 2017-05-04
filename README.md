@@ -36,7 +36,7 @@ require( ['promiscuous-umd'],function (Promise) {
 var Promise = require('promiscuous-umd');
 ```
 
-A minified version is built on install, but can be re-built with:
+A minified version is built on install (dist/promiscuous-min.js), but can be re-built with:
 ```bash
 $ build/build.js
 ```
