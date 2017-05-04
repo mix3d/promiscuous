@@ -1,20 +1,21 @@
 {
-  "name": "promiscuous",
+  "name": "promiscuous-umd",
   "version": "0.7.1",
-  "description": "A minimal and fast promise implementation",
+  "description": "A minimal and fast UMD-compatible promise implementation",
   "author": "Ruben Verborgh <ruben.verborgh@gmail.com>",
   "contributors": ["Madison Dickson <madison@mix3dstudios.com> (http://github.com/mix3d/)"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RubenVerborgh/promiscuous.git"
+    "url": "https://github.com/mix3d/promiscuous-umd.git"
   },
   "bugs": {
-    "url": "https://github.com/RubenVerborgh/promiscuous/issues"
+    "url": "https://github.com/mix3d/promiscuous-umd/issues"
   },
-  "main": "promiscuous.js",
+  "main": "promiscuous-umd.js",
   "scripts": {
-    "test": "promises-aplus-tests test/adapter"
+    "test": "promises-aplus-tests test/adapter",
+    "build": "node build/build.js"
   },
   "devDependencies": {
     "promises-aplus-tests": "2.0.x",
