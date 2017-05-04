@@ -1,32 +1,37 @@
-# promiscuous
+# promiscuous-umd
 <a href="http://promises-aplus.github.com/promises-spec">
-  <img src="http://promises-aplus.github.com/promises-spec/assets/logo-small.png"
+  <img src="https://promisesaplus.com/assets/logo-small.png"
        alt="Promises/A+ logo" title="Promises/A+ 1.0 compliant" align="right" />
 </a>
 
-promiscuous is a tiny implementation of the [Promises/A+ spec](http://promises-aplus.github.com/promises-spec/).
+promiscuous-umd is a tiny-ish implementation of the [Promises/A+ spec](http://promises-aplus.github.com/promises-spec/).
+Forked from [promiscuous](http://github.com/RubenVerborgh/promiscuous/), it trades an additional 0.5kb over the original library to provide a singular package compatible with all platforms and module loaders, including a shim to check if a native Promise is already provided, since it's 2017 and most browsers include them now.
 
-It is promise library in JavaScript, **small** (< 1kb [minified](https://raw.github.com/RubenVerborgh/promiscuous/dist/promiscuous-node.js) / < 0.6kb gzipped) and **fast**.
+It is promise library in JavaScript, **small** (< 1.5kb [minified](https://raw.github.com/mix3d/promiscuous-umd/dist/promiscuous-min.js) / < 0.75kb gzipped) and **fast**.
+
+# TODO:publish to NPM
 
 ## Installation and usage
 ### Node
 First, install promiscuous with npm.
 ```bash
-$ npm install promiscuous
+$ npm install promiscuous-umd
 ```
 
 Then, include promiscuous in your code file.
 ```javascript
-var Promise = require('promiscuous');
+var Promise = require('promiscuous-umd');
 ```
 
 ### Browsers
 Include [promiscuous](https://raw.github.com/RubenVerborgh/promiscuous/dist/promiscuous-browser.js) in your HTML file.
 ```html
-<script src="promiscuous-browser.js"></script>
+<script src="promiscuous-umd.js"></script>
 ```
 
-This version (and a minified one) can be built with:
+
+
+This a minified version can be built with:
 ```bash
 $ build/build.js
 ```
