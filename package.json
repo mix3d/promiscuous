@@ -15,7 +15,7 @@
   "main": "promiscuous-umd.js",
   "scripts": {
     "test": "promises-aplus-tests test/adapter",
-    "build": "node build/build.js"
+    "install": "node build/build.js"
   },
   "devDependencies": {
     "promises-aplus-tests": "2.0.x",
