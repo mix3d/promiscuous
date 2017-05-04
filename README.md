@@ -10,8 +10,6 @@ It is promise library in JavaScript, **small** (< 1.5kb [minified](https://raw.
 
 Forked from [promiscuous](http://github.com/mix3d/promiscuous-umd/), it trades an additional 0.5kb over the original library to provide a singular package compatible with all platforms and module loaders, including a shim to check if a native Promise is already provided, since it's 2017 and most browsers include them now.
 
-# TODO:publish to NPM
-
 ## Installation and usage
 ### Node
 First, install promiscuous with npm.
