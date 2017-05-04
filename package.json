@@ -1,9 +1,11 @@
 {
   "name": "promiscuous-umd",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "A minimal and fast UMD-compatible promise implementation",
   "author": "Ruben Verborgh <ruben.verborgh@gmail.com>",
-  "contributors": ["Madison Dickson <madison@mix3dstudios.com> (http://github.com/mix3d/)"],
+  "contributors": [
+    "Madison Dickson <madison@mix3dstudios.com> (http://github.com/mix3d/)"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
