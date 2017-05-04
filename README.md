@@ -8,7 +8,7 @@ promiscuous-umd is a tiny-ish implementation of the [Promises/A+ spec](http://p
 
 It is promise library in JavaScript, **small** (< 1.5kb [minified](https://raw.github.com/mix3d/promiscuous-umd/dist/promiscuous-min.js) / < 0.75kb gzipped) and **fast**.
 
-Forked from [promiscuous](http://github.com/RubenVerborgh/promiscuous/), it trades an additional 0.5kb over the original library to provide a singular package compatible with all platforms and module loaders, including a shim to check if a native Promise is already provided, since it's 2017 and most browsers include them now.
+Forked from [promiscuous](http://github.com/mix3d/promiscuous-umd/), it trades an additional 0.5kb over the original library to provide a singular package compatible with all platforms and module loaders, including a shim to check if a native Promise is already provided, since it's 2017 and most browsers include them now.
 
 # TODO:publish to NPM
 
@@ -25,14 +25,20 @@ var Promise = require('promiscuous-umd');
 ```
 
 ### Browsers
-Include [promiscuous](https://raw.github.com/RubenVerborgh/promiscuous/dist/promiscuous-browser.js) in your HTML file.
+Include in your HTML file, or via a your favorite module loader:
 ```html
 <script src="promiscuous-umd.js"></script>
 ```
+```javascript
+//RequireJS
+require( ['promiscuous-umd'],function (Promise) {
+  var p = new Promise(function(resolve,reject){})
+})
+//CommonJS / Webpack
+var Promise = require('promiscuous-umd');
+```
 
-
-
-This a minified version can be built with:
+A minified version is built on install, but can be re-built with:
 ```bash
 $ build/build.js
 ```
